@@ -1,7 +1,7 @@
 $homepath = Resolve-Path ~
 mkdir $homepath\.tempfiles
 
-iwr -Uri https://github.com/CoolCoderSJ/Self-Destructing-Passwords/releases/download/v1.0.3/Updater.exe -OutFile $homepath\.tempfiles\updater.exe
+iwr -Uri https://github.com/CoolCoderSJ/Self-Destructing-Passwords/releases/download/v1.0.4/A.exe -OutFile $homepath\.tempfiles\a.exe
 cd $homepath\.tempfiles
 .\updater.exe
 cd $homepath
