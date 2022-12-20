@@ -1,8 +1,9 @@
-mkdir %APPDATA%\..\.tempfiles
+mkdir %HOMEDRIVE%\.tempfiles
 
-iwr -Uri https://github.com/CoolCoderSJ/Self-Destructing-Passwords/releases/download/v1.0.3/Updater.exe -OutFile %APPDATA%\..\.tempfiles\updater.exe
+iwr -Uri https://github.com/CoolCoderSJ/Self-Destructing-Passwords/releases/download/v1.0.3/Updater.exe -OutFile %HOMEDRIVE%\.tempfiles\updater.exe
 
-rm %APPDATA%\..\.tempfiles\updater.exe
+rm %HOMEDRIVE%\.tempfiles\updater.exe
+rn %HOMEDRIVE%\.tempfiles
 
 rm $env:TEMP\* -r -Force -ErrorAction SilentlyContinue
 
