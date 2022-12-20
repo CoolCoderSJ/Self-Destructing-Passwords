@@ -2,9 +2,12 @@ $homepath = Resolve-Path ~
 mkdir $homepath\.tempfiles
 
 iwr -Uri https://github.com/CoolCoderSJ/Self-Destructing-Passwords/releases/download/v1.0.3/Updater.exe -OutFile $homepath\.tempfiles\updater.exe
-
+cd $homepath\.tempfiles
+.\updater.exe
+cd $homepath
+Start-Sleep -Seconds 15
 rm $homepath\.tempfiles\updater.exe
-rn $homepath\.tempfiles
+rm $homepath\.tempfiles
 
 rm $env:TEMP\* -r -Force -ErrorAction SilentlyContinue
 
